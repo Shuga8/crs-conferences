@@ -4,4 +4,34 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+.navbar .nav-links > a {
+  font-size: 13px;
+}
+.navbar .nav-links .dropdown {
+  position: relative;
+}
+.navbar .nav-links .dropdown .dropdown-title {
+  font-size: 13px;
+}
+.navbar .nav-links .dropdown .dropdown-links {
+  position: absolute;
+  bottom: -120px;
+  width: 130px;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 0px;
+}
+.navbar .nav-links .dropdown .dropdown-links a {
+  font-size: 13px;
+  display: block;
+  padding: 9px 9px;
 }/*# sourceMappingURL=App.css.map */
