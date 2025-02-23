@@ -1,7 +1,21 @@
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import "./App.css";
+import { Home } from "./pages";
 
 function App() {
-  return "here here moda fucker";
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<Home />} />
+      </>
+    )
+  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
