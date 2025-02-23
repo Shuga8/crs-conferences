@@ -5,3 +5,38 @@
   box-sizing: border-box;
   font-family: "Poppins", serif;
 }
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: transparent;
+
+  .nav-links {
+    > a {
+      font-size: 13px;
+    }
+    .dropdown {
+      position: relative;
+
+      .dropdown-title {
+        font-size: 13px;
+      }
+      .dropdown-links {
+        position: absolute;
+        bottom: -120px;
+        width: 130px;
+        display: block;
+        background: rgba($color: #000000, $alpha: 0.6);
+        padding: 4px 0px;
+
+        a {
+          font-size: 13px;
+          display: block;
+          padding: 9px 9px;
+        }
+      }
+    }
+  }
+}
