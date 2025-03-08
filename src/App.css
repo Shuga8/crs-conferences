@@ -6,6 +6,19 @@
   font-family: "Poppins", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0px;
+}
+html::-moz-scrollbar {
+  width: 0px;
+}
+html::-ms-scrollbar {
+  width: 0px;
+}
+
 .navbar {
   width: 100%;
   background: #fff;
