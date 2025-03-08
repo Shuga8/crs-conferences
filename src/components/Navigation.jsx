@@ -46,7 +46,7 @@ const Navigation = () => {
           <div className="dropdown">
             <div
               className={`dropdown-title cursor-pointer ${
-                pathNameCheck("/get-involved")
+                pathNameLike("/get-involved")
                   ? "border-b-2 border-orange-900"
                   : ""
               } text-orange-900 hover:text-orange-700 transition-colors ease-linear duration-300`}
@@ -75,7 +75,7 @@ const Navigation = () => {
 
         <Link
           to={"/contact"}
-          className="hidden lg:block text-[12px] font-[450] px-6 py-2 bg-orange-900 border border-orange-900 hover:bg-transparent hover:text-orange-900 text-white transition-colors ease-linear duration-300"
+          className="hidden lg:block text-[12px] font-[450] px-6 py-2 bg-orange-900 border border-orange-900 hover:bg-transparent hover:text-orange-900 text-white transition-colors ease-linear duration-300 select-none"
         >
           Contact
         </Link>
