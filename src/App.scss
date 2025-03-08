@@ -16,25 +16,41 @@
   .nav-links {
     > a {
       font-size: 13px;
+      user-select: none;
     }
     .dropdown {
       position: relative;
 
       .dropdown-title {
         font-size: 13px;
+        padding: 10px 0px 10px 0px;
       }
       .dropdown-links {
         position: absolute;
-        bottom: -120px;
-        width: 130px;
-        display: block;
-        background: rgba($color: #000000, $alpha: 0.6);
-        padding: 4px 0px;
+        top: 40px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s linear;
 
-        a {
-          font-size: 13px;
+        > div {
+          width: 130px;
           display: block;
-          padding: 9px 9px;
+          background: rgba($color: #1d0900, $alpha: 0.9);
+          padding: 4px 0px;
+
+          a {
+            font-size: 13px;
+            display: block;
+            padding: 9px 9px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      &:hover {
+        .dropdown-links {
+          max-height: 130px;
+          transition: max-height 0.3s linear;
         }
       }
     }

@@ -15,23 +15,37 @@
 }
 .navbar .nav-links > a {
   font-size: 13px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .navbar .nav-links .dropdown {
   position: relative;
 }
 .navbar .nav-links .dropdown .dropdown-title {
   font-size: 13px;
+  padding: 10px 0px 10px 0px;
 }
 .navbar .nav-links .dropdown .dropdown-links {
   position: absolute;
-  bottom: -120px;
+  top: 40px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+}
+.navbar .nav-links .dropdown .dropdown-links > div {
   width: 130px;
   display: block;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(29, 9, 0, 0.9);
   padding: 4px 0px;
 }
-.navbar .nav-links .dropdown .dropdown-links a {
+.navbar .nav-links .dropdown .dropdown-links > div a {
   font-size: 13px;
   display: block;
   padding: 9px 9px;
+  color: #ffffff;
+}
+.navbar .nav-links .dropdown:hover .dropdown-links {
+  max-height: 130px;
+  transition: max-height 0.3s linear;
 }/*# sourceMappingURL=App.css.map */
