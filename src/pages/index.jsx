@@ -4,3 +4,7 @@ export { default as Shop } from "./Shop";
 export { default as Sponsorship } from "./Sponsorship";
 export { default as Volunteer } from "./Volunteer";
 export { default as Patnership } from "./Patnership";
+export { default as Contact } from "./Contact";
+export { default as ServerError } from "./errors/ServerError";
+export { default as NotFound } from "./errors/NotFound";
+export { default as Forbidden } from "./errors/Forbidden";
