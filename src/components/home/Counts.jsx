@@ -39,8 +39,8 @@ const Counts = () => {
   }, []);
 
   return (
-    <div className="counts flex flex-wrap justify-center md:justify-normal lg:justify-center gap-x-4 gap-y-0.5 py-5 lg:py-10 px-2">
-      <div className="basis-[170px] h-[100px] flex flex-col justify-center items-center">
+    <div className="counts flex flex-wrap justify-center md:justify-normal lg:justify-center gap-x-4 gap-y-0.5 py-5 lg:py-10 px-2 select-none">
+      <div className="basis-[170px] h-[100px] flex flex-col justify-center items-center ">
         <div className="count text-center text-black text-2xl md:text-3xl xl:6xl">
           {attendeesCount}+
         </div>
