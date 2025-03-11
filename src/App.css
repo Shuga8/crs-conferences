@@ -67,4 +67,45 @@ html::-ms-scrollbar {
   background: url("./assets/Web banner D.png") no-repeat center center/cover;
   background-size: cover;
   position: relative;
+}
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  /* Add pseudo-elements for the white inner shadow */
+  /* Blur elements as they reach the edges */
+}
+.scroll-container::before, .scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 170px; /* Adjust as needed for shadow size */
+  pointer-events: none; /* Ensure no interference with interactions */
+  z-index: 2; /* Keep it above the scrolling content */
+}
+.scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+.scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+.scroll-container > ul {
+  animation: scroll 20s linear infinite;
+  position: relative;
+  z-index: 1; /* Keep the content below the pseudo-elements */
+}
+.scroll-container > ul li {
+  transition: filter 0.3s; /* Smooth transition for the blur effect */
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 96px));
+  }
 }/*# sourceMappingURL=App.css.map */
