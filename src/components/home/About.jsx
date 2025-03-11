@@ -9,14 +9,14 @@ const About = () => {
           About CRS Conferences
         </h2>
 
-        <p className="py-1 text-center text-sm leading-7 mb-0.5">
+        <p className="py-1 text-center text-sm leading-8 mb-0.5">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           dolor rem quae numquam veritatis optio error nemo cumque architecto
           officia! Porro velit tempore eius exercitationem quidem, repellat
           sapiente? Rerum corrupti sequi dolore corporis harum odio?
         </p>
 
-        <p className="py-1 text-center text-sm leading-7 mb-0.5">
+        <p className="py-1 text-center text-sm leading-8 mb-0.5">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
           eaque earum aspernatur consequatur atque perspiciatis, iste nostrum
           voluptatibus sapiente possimus rerum illo aliquam necessitatibus, enim
@@ -30,7 +30,7 @@ const About = () => {
           consequatur!
         </p>
 
-        <p className="py-1 text-center text-sm leading-7 mb-2">
+        <p className="py-1 text-center text-sm leading-8 mb-2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           dolor rem quae numquam veritatis optio error nemo cumque architecto
           officia! Porro velit tempore eius exercitationem quidem, repellat
