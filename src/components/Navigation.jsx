@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/CRS-CRC.svg";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 
 const Navigation = () => {
+  const [sideBarState, setSideBarState] = useState(false);
   const pathNameCheck = (path) => {
     return window.location.pathname === path;
   };
@@ -10,6 +13,8 @@ const Navigation = () => {
   const pathNameLike = (path) => {
     return window.location.pathname.includes(path);
   };
+
+  const toggleAside = (e) => {};
   return (
     <>
       <nav
@@ -79,8 +84,82 @@ const Navigation = () => {
         >
           Contact
         </Link>
+
+        <div
+          className="block lg:hidden px-2 py-1.5 text-yellow-900 text-2xl cursor-pointer"
+          onClick={() => setSideBarState(!sideBarState)}
+        >
+          <HiMenuAlt3 />
+        </div>
       </nav>
-      <aside className="side-bar"></aside>
+      <aside
+        className={`aside w-full fixed bg-white z-[31] transition-[height,_width] duration-300 ease-in-out overflow-hidden block`}
+        style={{
+          top: 0,
+          height: sideBarState ? `100dvh` : `0px`,
+        }}
+      >
+        {sideBarState && (
+          <div className="content w-full h-full px-6 py-10 flex justify-center flex-col items-center gap-y-8">
+            <div
+              className="absolute top-0 right-0 text-red-800 text-[25px] px-4 py-3 "
+              onClick={() => setSideBarState(false)}
+              role="button"
+            >
+              <IoMdClose />
+            </div>
+
+            <Link to={"/"} className="logo select-none">
+              <img
+                src={logo}
+                alt="CRS LOGO"
+                className="w-[200px] h-[50px] object-contain mb-3"
+              />
+            </Link>
+            <Link
+              to={"/"}
+              className="text-[18px] font-[650] text-orange-700 block"
+            >
+              Home
+            </Link>
+
+            <Link
+              to={"/call-for-papers"}
+              className="text-[18px] font-[650] text-orange-700 block"
+            >
+              Call for papers
+            </Link>
+
+            <Link
+              to={"/get-involved/sponsorship"}
+              className="text-[18px] font-[650] text-orange-700 block"
+            >
+              Sponsorship
+            </Link>
+
+            <Link
+              to={"/get-involved/volunteer"}
+              className="text-[18px] font-[650] text-orange-700 block"
+            >
+              Volunteer
+            </Link>
+
+            <Link
+              to={"/get-involved/patnership"}
+              className="text-[18px] font-[650] text-orange-700 block"
+            >
+              Patnership
+            </Link>
+
+            <Link
+              to={"/shop"}
+              className="text-[18px] font-[650] text-orange-700 block"
+            >
+              Shop
+            </Link>
+          </div>
+        )}
+      </aside>
     </>
   );
 };
