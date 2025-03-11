@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/CRS-CRC.svg";
 import { Fade } from "react-awesome-reveal";
+import { FaArrowUp } from "react-icons/fa6";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
+  useEffect(() => {
+    const toggleBackToTopVisibility = () => {
+      const btn = document.querySelector(".back-to-top");
+      if (!btn) return; // Check if the button exists
+
+      let position = window.scrollY;
+
+      if (position > 130) {
+        btn.classList.remove("bottom-[-100px]");
+        btn.classList.add("bottom-[10px]");
+      } else {
+        btn.classList.remove("bottom-[10px]");
+        btn.classList.add("bottom-[-100px]");
+      }
+    };
+
+    window.addEventListener("scroll", toggleBackToTopVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleBackToTopVisibility);
+    };
+  }, []);
   return (
     <>
       <footer className="w-full bg-[#f0f0f0] py-10 base:py-14 md:py-16 px-5 base:px-12 md:px-32 flex flex-col gap-y-6 justify-center place-items-center">
@@ -111,6 +135,12 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
+      <div
+        role="button"
+        className={`back-to-top cursor-pointer fixed bottom-[-100px] right-4 w-[40px] h-[40px] text-base bg-orange-900 hover:bg-orange-800 transition-all ease-linear duration-300 text-white z-[3] flex justify-center items-center rounded-full`}
+      >
+        <FaArrowUp />
+      </div>
     </>
   );
 };
