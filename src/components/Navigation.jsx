@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/CRS_logo.svg";
+import logo from "../assets/CRS-CRC.svg";
 
 const Navigation = () => {
   const pathNameCheck = (path) => {
@@ -20,7 +20,7 @@ const Navigation = () => {
           <img
             src={logo}
             alt="CRS LOGO"
-            className="w-[40px] h-[40px] object-contain"
+            className="w-[200px] h-[50px] object-contain"
           />
         </Link>
 
