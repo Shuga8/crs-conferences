@@ -79,10 +79,12 @@ const Navigation = () => {
         </div>
 
         <Link
-          to={"/contact"}
+          to={"https://thetbmevents.com/events/cyber-research-conference-25"}
+          target="_blank"
+          rel="noreferrer"
           className="hidden lg:block text-[12px] font-[450] px-6 py-2 bg-orange-900 border border-orange-900 hover:bg-transparent hover:text-orange-900 text-white transition-colors ease-linear duration-300 select-none"
         >
-          Contact
+          Register
         </Link>
 
         <div
