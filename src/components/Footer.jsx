@@ -16,9 +16,9 @@ const Footer = () => {
 
       if (position > 130) {
         btn.classList.remove("bottom-[-100px]");
-        btn.classList.add("bottom-[10px]");
+        btn.classList.add("bottom-[30px]");
       } else {
-        btn.classList.remove("bottom-[10px]");
+        btn.classList.remove("bottom-[30px]");
         btn.classList.add("bottom-[-100px]");
       }
     };
@@ -29,6 +29,10 @@ const Footer = () => {
       window.removeEventListener("scroll", toggleBackToTopVisibility);
     };
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <footer className="w-full bg-[#f0f0f0] py-10 base:py-14 md:py-16 px-5 base:px-12 md:px-32 flex flex-col gap-y-6 justify-center place-items-center">
@@ -136,8 +140,8 @@ const Footer = () => {
         </nav>
       </footer>
       <div
-        role="button"
-        className={`back-to-top cursor-pointer fixed bottom-[-100px] right-4 w-[40px] h-[40px] text-base bg-orange-900 hover:bg-orange-800 transition-all ease-linear duration-300 text-white z-[3] flex justify-center items-center rounded-full`}
+        onClick={scrollToTop}
+        className={`back-to-top cursor-pointer fixed bottom-[-100px] right-7 w-[40px] h-[40px] text-base bg-orange-900 hover:bg-orange-800 transition-all ease-linear duration-300 text-white z-[3] flex justify-center items-center rounded-full`}
       >
         <FaArrowUp />
       </div>
