@@ -69,6 +69,7 @@ html::-ms-scrollbar {
 .hero-section {
   width: 100%;
   min-height: 600px;
+  background-size: contain;
   background-color: #fff;
   position: relative;
   display: flex;
@@ -78,7 +79,10 @@ html::-ms-scrollbar {
   row-gap: 2.5rem;
 }
 .hero-section .logo img {
-  filter: drop-shadow(1px 1px 2px #f6965b);
+  filter: drop-shadow(1px 1px 5px #aaa);
+}
+.hero-section .content {
+  perspective: 1000px;
 }
 
 .scroll-container {
