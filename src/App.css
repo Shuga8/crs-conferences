@@ -69,6 +69,7 @@ html::-ms-scrollbar {
 .hero-section {
   width: 100%;
   min-height: 600px;
+  background: url("./assets/globe.png") no-repeat center center/cover;
   background-size: contain;
   background-color: #fff;
   position: relative;
