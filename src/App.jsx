@@ -3,6 +3,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
+  ScrollRestoration,
 } from "react-router-dom";
 import "./App.css";
 import {
@@ -22,9 +23,33 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/call-for-papers" element={<CallForPapers />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <ScrollRestoration />
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <ScrollRestoration />
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/call-for-papers"
+          element={
+            <>
+              <ScrollRestoration />
+              <CallForPapers />{" "}
+            </>
+          }
+        />
         <Route path="/shop" element={<Shop />} />
         <Route path="/get-involved/sponsorship" element={<Sponsorship />} />
         <Route path="/get-involved/volunteer" element={<Volunteer />} />

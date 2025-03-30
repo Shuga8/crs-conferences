@@ -1,7 +1,13 @@
 import React from "react";
+import { CallBanner, Navigation } from "../components";
 
 const CallForPapers = () => {
-  return <div>CallForPapers</div>;
+  return (
+    <>
+      <Navigation />
+      <CallBanner />
+    </>
+  );
 };
 
 export default CallForPapers;

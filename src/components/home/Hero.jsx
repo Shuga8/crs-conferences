@@ -86,7 +86,7 @@ const Hero = () => {
               </span>
             </div>
 
-            <div className="countdown-container w-full grid grid-cols-2 sept:grid-cols-4  justify-center gap-x-4 gap-y-3.5">
+            <div className="countdown-container w-full grid grid-cols-2 sept:grid-cols-4  justify-center gap-x-4 gap-y-3.5 select-none">
               <div className="w-[120px] bg-slate-500 bg-opacity-5 h-[70px] shrink-0 rounded-md border border-slate-200 flex flex-col justify-center items-center">
                 <p className="text-4xl text-slate-800 text-center">{days}</p>
                 <p className="text-xs text-center text-orange-500">Days</p>
