@@ -1,11 +1,20 @@
 import React from "react";
-import { CallBanner, Navigation } from "../components";
+import {
+  CallBanner,
+  FocalAreas,
+  Footer,
+  Navigation,
+  OurPatners,
+} from "../components";
 
 const CallForPapers = () => {
   return (
     <>
       <Navigation />
       <CallBanner />
+      <FocalAreas />
+      <OurPatners />
+      <Footer />
     </>
   );
 };

@@ -6,7 +6,7 @@ import about_img from "../../assets/about.jpg";
 const About = () => {
   return (
     <>
-      <section className="about-section py-1.5 md:py-2.5 xl:py-3.5 px-6 md:px-12 lg:px-24 xl:px-32 select-none bg-gray-50">
+      <section className="about-section py-1.5 md:py-2.5 xl:py-3.5 px-6 md:px-12 lg:px-24 xl:px-32 select-none">
         <Fade triggerOnce={true} cascade={true}>
           <h2 className="text-[1.3rem] md:text-[1.75rem] xl:text-[2.2rem] text-yellow-950 font-semibold text-center mb-5">
             About CRS Conferences
@@ -22,11 +22,11 @@ const About = () => {
             </div>
 
             <div className="">
-              <p className="py-1 text-center text-sm leading-6 mb-0.5">
+              <p className="py-1 text-center text-xs leading-6 mb-0.5">
                 Bridging The Gap: Fostering Collaboration Between Academia and
                 Industry in Advancing Cybersecurity Research and Education.
               </p>
-              <p className="py-1 text-center text-sm leading-6 mb-0.5">
+              <p className="py-1 text-center text-xs leading-6 mb-0.5">
                 The theme "Bridging the Gap: Fostering Collaboration Between
                 Academia and Industry in Advancing Cybersecurity Research and
                 Education" is pivotal in addressing the critical need for
@@ -41,7 +41,7 @@ const About = () => {
                 mutually benefit from each other's strengths.
               </p>
 
-              <p className="py-1 text-center text-sm leading-6 mb-0.5">
+              <p className="py-1 text-center text-xs leading-6 mb-0.5">
                 Encouraging the establishment of partnerships and collaborative
                 efforts between universities, research institutions and industry
                 players is essential. Methods such as joint research projects,
@@ -57,7 +57,7 @@ const About = () => {
                 successful collaborations and their tangible impact.
               </p>
 
-              <p className="py-1 text-center text-sm leading-6 mb-0.5">
+              <p className="py-1 text-center text-xs leading-6 mb-0.5">
                 Enhancing cybersecurity education involves advocating for
                 curricula that reflect current industry needs and future trends,
                 stressing the importance of equipping students with practical
@@ -71,7 +71,7 @@ const About = () => {
                 innovation.
               </p>
 
-              <p className="py-1 text-center text-sm leading-6 mb-2">
+              <p className="py-1 text-center text-xs leading-6 mb-2">
                 In conclusion, the theme "Bridging the Gap: Fostering
                 Collaboration Between Academia and Industry in Advancing
                 Cybersecurity Research and Education" is a call to action for

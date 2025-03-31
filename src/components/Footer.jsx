@@ -10,7 +10,7 @@ const Footer = () => {
   useEffect(() => {
     const toggleBackToTopVisibility = () => {
       const btn = document.querySelector(".back-to-top");
-      if (!btn) return; // Check if the button exists
+      if (!btn) return;
 
       let position = window.scrollY;
 
@@ -129,7 +129,7 @@ const Footer = () => {
                 Developed By{" "}
                 <a
                   href=""
-                  className="text-cyan-500 hover:text-cyan-300 duration-300 ease-in-out transition-colors"
+                  className="text-cyan-800 hover:text-cyan-700 duration-300 ease-in-out transition-colors"
                 >
                   Blue Dragon Inc.
                 </a>
