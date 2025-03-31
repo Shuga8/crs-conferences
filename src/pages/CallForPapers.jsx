@@ -5,6 +5,7 @@ import {
   Footer,
   Navigation,
   OurPatners,
+  PosterPaper,
 } from "../components";
 
 const CallForPapers = () => {
@@ -13,6 +14,7 @@ const CallForPapers = () => {
       <Navigation />
       <CallBanner />
       <FocalAreas />
+      <PosterPaper />
       <OurPatners />
       <Footer />
     </>
