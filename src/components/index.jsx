@@ -7,3 +7,4 @@ export { default as OurPatners } from "./home/OurPatners";
 export { default as Footer } from "./Footer";
 export { default as CallBanner } from "./CallForPapers/CallBanner";
 export { default as FocalAreas } from "./CallForPapers/FocalAreas";
+export { default as PosterPaper } from "./CallForPapers/PosterPaper";
